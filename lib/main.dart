@@ -82,7 +82,7 @@ class _GamePageState extends State<GamePage> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: const Text(
-          '❌ Tic Tac Toe 0️⃣',
+          'Tic Tac Toe',
           style: TextStyle(
             color: Colors.white,
             fontSize: 36,
@@ -142,6 +142,12 @@ class _GamePageState extends State<GamePage> {
           const SizedBox(height: 30),
           OutlinedButton(
             onPressed: resetGame,
+            // style: ButtonStyle(
+            //   backgroundColor: MaterialStateProperty.all(Colors.white),
+            // ),
+            style: OutlinedButton.styleFrom(
+              surfaceTintColor: Colors.white,
+            ),
             child: const Text(
               'Reset Game',
               style: TextStyle(fontSize: 24, color: Colors.red),
